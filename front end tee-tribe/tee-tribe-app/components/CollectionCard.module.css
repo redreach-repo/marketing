@@ -1,0 +1,42 @@
+.card {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.swatch {
+  height: 140px;
+  background: linear-gradient(135deg, var(--card-accent) 0%, var(--bg) 140%);
+}
+
+.body {
+  padding: 20px 22px 22px;
+}
+
+.name {
+  font-size: 22px;
+  margin-top: 6px;
+}
+
+.desc {
+  margin-top: 10px;
+  color: var(--ink-muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--card-accent);
+}
