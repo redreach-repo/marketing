@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Red Reach – Reach Every District</title>
+  <meta name="description" content="Red Reach is a Dubai-based consortium spanning market entry, recruiting, custom uniforms, virtual assistance, corporate travel, and retail — one team, 20+ years of UAE infrastructure."/>
+  <meta name="keywords" content="Red Reach Dubai, UAE Business Consortium, Business Setup Dubai, Corporate Uniforms UAE, Virtual Assistance Dubai, Corporate Travel UAE"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <!--
+    DRAFT — proposed replacement/extension of the current redreach.ae homepage.
+
+    Why this exists: the live GRG page (front end GRG/index.html) presents Red
+    Reach as a single-vertical market-entry firm, with no mention of RR Threads,
+    RR Connect, RR Wanders, or (new) Tee Tribe anywhere on it. This draft
+    repositions Red Reach as the consortium it actually is, with the market-entry
+    content folded in as one division among several, and adds a divisions grid,
+    a case-studies section, and cross-links to every division.
+
+    Before shipping:
+    - Division links below are relative paths into this repo for review purposes
+      (e.g. "../front end GRG/index.html"). Swap for real routes once the team
+      decides on subpaths (redreach.ae/business-setup) vs. subdomains.
+    - Tee Tribe's link points at a placeholder teetribe.ae — update once that
+      domain is live (see redreach-repo/marketing PR for the storefront scaffold).
+    - Copy throughout should get a pass from the team — this establishes
+      structure and tone, not final-approved wording.
+  -->
+</head>
+<body>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/971507008977" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <span><i class="fa fa-envelope"></i> info@redreach.ae</span>
+    <span><i class="fa fa-phone"></i> +971 50 700 8977</span>
+    <span><i class="fa fa-clock"></i> Mon–Fri: 8am–5pm &nbsp;|&nbsp; Sat: 8am–2pm</span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="RedReach_logo.jpg" alt="Red Reach Dubai" class="logo-img"/>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#divisions">Divisions</a></li>
+      <li><a href="#case-studies">Case Studies</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-cta">Talk to Red Reach</a>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-sub">Dubai-based &middot; Since 2018</p>
+      <h1>One Team.<br/>Every District<br/>You Need to Reach.</h1>
+      <p>Red Reach is a consortium of specialist divisions — market entry, recruiting, custom uniforms, virtual assistance, corporate travel, and now retail — built on the same 20+ years of UAE operational infrastructure. Work with one Dubai-based team instead of six different vendors.</p>
+      <div class="hero-btns">
+        <a href="#divisions" class="btn-cta">See Our Divisions</a>
+        <a href="#contact" class="btn-ghost">Talk to Red Reach</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <span class="badge-number">6</span>
+      <span class="badge-label">Specialist<br/>Divisions</span>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="trust-item"><i class="fa fa-check-circle"></i> 20+ Years of UAE Corporate Infrastructure</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> 6 Specialist Divisions, One Dubai-Based Team</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> Trusted by HSBC and Global Founders</div>
+    <div class="trust-item"><i class="fa fa-check-circle"></i> End-to-End Delivery, Start to Finish</div>
+  </section>
+
+  <!-- DIVISIONS -->
+  <section class="divisions" id="divisions">
+    <div class="section-header">
+      <p class="section-label">What We Do</p>
+      <h2>Six Divisions. One Infrastructure.</h2>
+      <p class="section-sub">Every division runs on the same Dubai-based operational backbone. Bring us one project or all six — the team and the infrastructure are the same either way.</p>
+    </div>
+
+    <div class="divisions-grid">
+
+      <div class="division-card">
+        <div class="division-card-top"><i class="fa fa-building"></i></div>
+        <h4>Market Entry &amp; Business Setup</h4>
+        <p>Jurisdiction selection, licensing, banking strategy, VAT, and visa structuring for founders entering the UAE — 20+ years of proven infrastructure.</p>
+        <a href="../front end GRG/index.html" class="division-link">Explore Market Entry <i class="fa fa-arrow-right"></i></a>
+      </div>
+
+      <div class="division-card">
+        <div class="division-card-top"><i class="fa fa-user-tie"></i></div>
+        <h4>Recruiting &amp; Staffing</h4>
+        <p>End-to-end talent acquisition for regional and global employers — including enterprise programs like our HSBC recruiting engagement.</p>
+        <a href="#case-studies" class="division-link">Read the Case Study <i class="fa fa-arrow-right"></i></a>
+      </div>
+
+      <div class="division-card">
+        <div class="division-card-top"><i class="fa fa-shirt"></i></div>
+        <h4>RR Threads — Custom Uniforms</h4>
+        <p>Corporate, school, aviation, and retail uniforms, sourced and produced in-house from design through delivery.</p>
+        <a href="../front end uniform/uniform.html" class="division-link">Explore RR Threads <i class="fa fa-arrow-right"></i></a>
+      </div>
+
+      <div class="division-card">
+        <div class="division-card-top"><i class="fa fa-headset"></i></div>
+        <h4>RR Connect — Virtual Assistance</h4>
+        <p>Remote executive and operational support that scales with your business, without the overhead of an in-house hire.</p>
+        <a href="#contact" class="division-link">Talk to RR Connect <i class="fa fa-arrow-right"></i></a>
+      </div>
+
+      <div class="division-card">
+        <div class="division-card-top"><i class="fa fa-plane"></i></div>
+        <h4>RR Wanders — Corporate Travel</h4>
+        <p>Travel planning and booking for teams and executives who need it handled, not managed.</p>
+        <a href="#contact" class="division-link">Talk to RR Wanders <i class="fa fa-arrow-right"></i></a>
+      </div>
+
+      <div class="division-card">
+        <div class="division-card-top">
+          <i class="fa fa-shirt"></i>
+          <span class="division-badge">New &middot; Consumer Brand</span>
+        </div>
+        <h4>Tee Tribe — Designer Tees</h4>
+        <p>Faith, UAE pride, funny, and everyday graphic tees. An independent consumer brand incubated by Red Reach, produced through RR Threads.</p>
+        <a href="https://teetribe.ae" target="_blank" rel="noreferrer" class="division-link">Visit Tee Tribe <i class="fa fa-arrow-up-right-from-square"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="case-studies" id="case-studies">
+    <div class="section-header light">
+      <p class="section-label">Proof</p>
+      <h2>Real Work, Real Results</h2>
+    </div>
+    <div class="case-grid">
+      <div class="case-card">
+        <span class="section-label">Recruiting</span>
+        <h4>HSBC Recruiting</h4>
+        <p>A regional recruiting engagement for one of the world's largest banks — sourced, screened, and delivered by the Red Reach team.</p>
+        <a href="https://redreach.ae/cases/hsbc-recruiting/" target="_blank" rel="noreferrer">Read the case study &rarr;</a>
+      </div>
+    </div>
+    <p class="case-note">More case studies land here as each division publishes its own — this section is built to grow past one card.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80" alt="Red Reach Dubai team"/>
+      <div class="about-stat">
+        <span>20+</span>
+        Years UAE
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="section-label">About Red Reach</p>
+      <h2>Reach Every District.</h2>
+      <p>Red Reach started in market entry, then grew into a consortium: recruiting, uniforms, virtual assistance, travel, and now retail — all running on the same Dubai-based operational infrastructure built over 20+ years.</p>
+      <p>Each division has its own specialists and its own process, but they share one team, one set of UAE relationships, and one standard for how work gets delivered.</p>
+      <div class="about-highlights">
+        <div><i class="fa fa-check"></i> Dubai HQ, UAE-wide reach</div>
+        <div><i class="fa fa-check"></i> One point of contact, six capabilities</div>
+        <div><i class="fa fa-check"></i> 20+ years of operational infrastructure</div>
+        <div><i class="fa fa-check"></i> Enterprise and founder clients alike</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-info">
+      <h2>Talk to Red Reach</h2>
+      <p>Tell us which division you need, or just tell us the problem — we'll route it to the right team.</p>
+      <div class="contact-detail"><i class="fa fa-envelope"></i> info@redreach.ae</div>
+      <div class="contact-detail"><i class="fa fa-phone"></i> +971 50 700 8977</div>
+      <div class="contact-detail"><i class="fa fa-map-marker-alt"></i> Dubai, UAE</div>
+      <div class="contact-detail"><i class="fa fa-clock"></i> Mon–Fri: 8am–5pm | Sat: 8am–2pm</div>
+    </div>
+    <form class="contact-form">
+      <h3>Send a message</h3>
+      <input type="text" placeholder="Full name" required/>
+      <input type="email" placeholder="Email address" required/>
+      <select required>
+        <option value="" disabled selected>Which division?</option>
+        <option>Market Entry &amp; Business Setup</option>
+        <option>Recruiting &amp; Staffing</option>
+        <option>RR Threads — Uniforms</option>
+        <option>RR Connect — Virtual Assistance</option>
+        <option>RR Wanders — Corporate Travel</option>
+        <option>Tee Tribe</option>
+        <option>Not sure — point me in the right direction</option>
+      </select>
+      <textarea rows="4" placeholder="Tell us what you need"></textarea>
+      <button type="submit" class="btn-cta">Send message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="RedReach_logo.jpg" alt="Red Reach Dubai" class="footer-logo"/>
+        <p>Red Reach is a Dubai-based consortium spanning market entry, recruiting, uniforms, virtual assistance, travel, and retail — one team, 20+ years of UAE infrastructure.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/971507008977" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <a href="#home">Home</a>
+        <a href="#divisions">Divisions</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-divisions">
+        <h4>Divisions</h4>
+        <a href="../front end GRG/index.html">Market Entry</a>
+        <a href="#case-studies">Recruiting &amp; Staffing</a>
+        <a href="../front end uniform/uniform.html">RR Threads</a>
+        <a href="#contact">RR Connect</a>
+        <a href="#contact">RR Wanders</a>
+        <a href="https://teetribe.ae" target="_blank" rel="noreferrer">Tee Tribe</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fa fa-envelope"></i> info@redreach.ae</p>
+        <p><i class="fa fa-phone"></i> +971 50 700 8977</p>
+        <p><i class="fab fa-whatsapp"></i> +971 50 700 8977</p>
+        <p><i class="fa fa-map-marker-alt"></i> Dubai, UAE</p>
+        <p><i class="fa fa-clock"></i> Mon–Fri: 8am–5pm | Sat: 8am–2pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Red Reach is a Dubai-based consortium of specialist divisions, powered by one team and 20+ years of UAE infrastructure.</p>
+      <p style="margin-top:8px;">© 2026 Red Reach. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
