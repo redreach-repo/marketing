@@ -1,0 +1,47 @@
+.card {
+  display: block;
+}
+
+.swatch {
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: flex-end;
+  padding: 16px;
+  transition: opacity 0.2s ease;
+}
+
+.card:hover .swatch {
+  opacity: 0.88;
+}
+
+.swatchLabel {
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+}
+
+.body {
+  padding-top: 12px;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font-body);
+}
+
+.colorway {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+.price {
+  margin: 6px 0 0;
+  font-weight: 600;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}

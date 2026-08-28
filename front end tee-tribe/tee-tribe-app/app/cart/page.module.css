@@ -1,0 +1,114 @@
+.empty {
+  padding: 100px 24px;
+  text-align: center;
+}
+
+.empty p {
+  color: var(--ink-muted);
+  margin: 12px 0 24px;
+}
+
+.wrap {
+  padding: 48px 24px 100px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .wrap {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
+
+.title {
+  font-size: 30px;
+  grid-column: 1 / -1;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: 84px 1fr auto;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.swatch {
+  width: 84px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.lineName {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.lineMeta {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+.qtyRow {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+.qtyRow select {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 6px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.remove {
+  background: none;
+  border: none;
+  color: var(--ink-muted);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0;
+}
+
+.lineTotal {
+  font-weight: 600;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.summary {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  height: fit-content;
+}
+
+.subtotalRow {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
+.note {
+  margin: 10px 0 20px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}

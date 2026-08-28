@@ -1,0 +1,125 @@
+.wrap {
+  padding: 48px 24px 100px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .wrap {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+  }
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.notice {
+  background: #fdf3e2;
+  border: 1px solid #e8c98a;
+  color: #6b4a10;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.notice code {
+  background: rgba(0, 0, 0, 0.08);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .notice {
+    background: #2a2210;
+    border-color: #5a4a1e;
+    color: #e8c98a;
+  }
+}
+
+.fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fieldset legend {
+  margin-bottom: 6px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.fieldset input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.paymentPlaceholder {
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  padding: 18px 14px;
+  font-size: 13px;
+  color: var(--ink-muted);
+  text-align: center;
+}
+
+.summary {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  height: fit-content;
+}
+
+.summaryLines {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+.summaryLine {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.summaryTotal {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
+.confirm {
+  padding: 100px 24px;
+  max-width: 60ch;
+}
+
+.confirm p {
+  margin: 14px 0 24px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
